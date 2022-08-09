@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="./style.css" rel="stylesheet">
+    <title>CodeFounders</title>
+    <script>
+      // DOM Document Object Model, DOM Manipulatie
+      function welkom(){
+        var naam = document.getElementById("mijnnaam").value;
+        console.log("Welkom " + naam + "!")
+        document.getElementById("mijnnaam2").innerHTML = `Welkom ${naam}!`;
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- Algemene notities -->
+    <h1 onclick="alert()">Goed om te onthouden!</h1>
+    <br>
+    <p>Lijst van notities:</p>
+    <br>
+    <ul>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      <li>Elementen: style (voor CSS), script (voor JavaScript)</li>
+      <li>Attributen: onclick="alert()"</li>
+      <li>Java heeft niets met JavaScript te maken!</li>
+      <ul>
+        <li>De naam "JavaScript" was een marketing beslissing</li>
+      </ul>
+    </ul>
+    <br>
+    <hr>
+    <br>
+
+    <!-- JavaScript-->
+    <input id="mijnnaam"><button onclick="welkom()">Klik hier</button>
+    <div id="mijnnaam2">Welkom : </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- GIT -->
+    <h2>GIT</h2>
+    <ul>
+      <li><a href="https://www.github.com" target="_blank">GitHub.com</a></li>
+      <li>DevOps:</li>
+      <ul>
+        <li>Development: Programmeur</li>
+        <li>Operations: Systeem Beheerders</li>
+      </ul>
+      <li>Commando's:</li>
+      <ul>
+        <li><span class="code">ls</span> (laat zien welke bestanden en folders in de huidige locatie zitten)</li>
+        <li><span class="code">cd Folder/</span> (gaat naar de gegeven folder toe)</li>
+        <li><span class="code">cd ..</span> (gaat terug naar de vorige folder)</li>
+        <li><span class="code">git init</span> (maakt een repository aan in huidige folder)</li>
+        <li><span class="code">rm .git -r</span> (verwijdert de git map)</li>
+        <li><span class="code">git add .</span> (voegt bestanden toe aan repository)</li>
+      </ul>
+    </ul>
+
+  </body>
+</html>

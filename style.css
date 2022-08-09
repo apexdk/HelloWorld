@@ -1,0 +1,9 @@
+* {
+  margin: auto;
+  font-family: verdana;
+}
+
+span.code {
+  font-family: consolas;
+  background-color: lightgray;
+}
